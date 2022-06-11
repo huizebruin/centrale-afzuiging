@@ -9,7 +9,5 @@ jobs:
   build:
     uses: esphome/workflows/.github/workflows/publish.yml@main
     with:
-      # CHANGEME: Set the filenames of your config files here:
-      files: centrale-afzuiging-esp8266.yaml
-      # CHANGEME: Set the name of your project here:
+      files: esphome/centrale-afzuiging-esp8266.yaml
       name: centrale-afzuiging

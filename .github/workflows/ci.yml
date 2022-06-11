@@ -5,16 +5,13 @@ on:
 
 jobs:
   ci:
-    name: Building ${{ matrix.file }}
+    name: "🛠️ Build check"
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        file:
-          - centrale-afzuiging-esp8266.yaml
     steps:
-      - name: Checkout source code
-        uses: actions/checkout@v2
-      - name: Build ESPHome firmware to verify configuration
-        uses: esphome/build-action@v1.5.0
+      - name: ⤵️ Check out files from GitHub
+        uses: actions/checkout@v3
+      - name: Test firmware build
+        uses: esphome/build-action@v1.3.1
         with:
-          yaml_file: ${{ matrix.file }}
+          yaml_file: esphome/centrale-afzuiging-esp8266.yaml
+ 
