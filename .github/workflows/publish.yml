@@ -1,12 +1,15 @@
-name: Build and Publish ESPHome firmware and website
+---
+name: Publish firmware
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
+  release:
+    types:
+      - published
 
 jobs:
-  build:
+  publish:
+    name: "🛠️ ESPHome firmware"
     uses: esphome/workflows/.github/workflows/publish.yml@main
     with:
       files: esphome/centrale-afzuiging-esp8266.yaml
