@@ -81,7 +81,7 @@ fan:
 text_sensor:
   - platform: template
     name: "${name}_versie"
-    id: s0tool_versie
+    id: ${name}_versie
     icon: "mdi:label-outline"
     update_interval: 6h
     lambda: |-
