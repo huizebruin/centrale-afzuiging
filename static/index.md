@@ -1,4 +1,4 @@
-| Repository Status | ESPHome S0tool discord Community |
+| Repository Status | Huizebruin.nl discord Community |
 | :--- | :--- |
 | [![last commit time][github-last-commit]][github-master] [![GitHub Activity][commits-shield]][commits] | [![Discord][discord-shield]][discord] ![Twitter Follow](https://img.shields.io/twitter/follow/huizebruin?style=social) 
 |  [![License][license-shield]](LICENSE) [![Forks][forks-shield]][forks-url] [![Stargazers][stars-shield]][stars-url] [![Issues][issues-shield]][issues-url] | [![Contributors][contributors-shield]][contributors-url] [![GitHub release](https://img.shields.io/github/release/huizebruin/centrale-afzuiging.svg)](https://GitHub.com/huizebruin/centrale-afzuiging/releases/)| 
@@ -50,7 +50,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 [github-master]: https://github.com/huizebruin/centrale-afzuiging/commits/main
 [license-shield]: https://img.shields.io/github/license/huizebruin/centrale-afzuiging.svg
 [discord-shield]: https://img.shields.io/discord/723629686093119650.svg?logo=discord&color=7289da
-[discord]: https://discord.gg/bN8rC7gEng
+[discord]: https://discord.gg/g2maSf47Jj
 [contributors-url]: https://github.com/huizebruin/centrale-afzuiging/graphs/contributors
 [contributors-shield]: https://img.shields.io/github/contributors/huizebruin/centrale-afzuiging.svg
 [forks-shield]: https://img.shields.io/github/forks/huizebruin/centrale-afzuiging.svg
