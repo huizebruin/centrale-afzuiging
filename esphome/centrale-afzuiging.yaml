@@ -65,6 +65,7 @@ fan:
   name: "Ventilation"
   speed_count:
     8
+    
 #------------------------#  sensoren #------------------------#
 sensor:
 # ⬇ versie verbinding informatie sensoren voor in ha ⬇ #
