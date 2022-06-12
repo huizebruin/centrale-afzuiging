@@ -4,8 +4,8 @@
 # © Huizebruin.nl
 substitutions:
   vdate: "v22.06.1"
-  device_description: centrale afzuiging gemaakt door huizebruin.nl versie ${vdate} .
-  name: variabele_afzuiging
+  device_description: centrale afzuiging gemaakt door huizebruin.nl versie ${vdate}.
+  name: centrale_afzuiging
 
 esphome:
   name: ${name}
@@ -69,7 +69,7 @@ fan:
 sensor:
 # ⬇ versie verbinding informatie sensoren voor in ha ⬇ #
   - platform: wifi_signal
-    name: "${name}_WiFi_Signal"
+    name: "${name}_wiFi_Signal"
     update_interval: 120s
     
 text_sensor:
