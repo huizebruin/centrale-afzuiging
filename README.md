@@ -1,21 +1,35 @@
 # ESPHome Project Template
 
-This repo serves as a template for creating a new ESPHome project.
 
-It includes a GitHub workflow that will automatically build the configuration(s) and then deploys a simple 
-website via GitHub pages that utilises [ESP Web Tools](https://esphome.github.io/esp-web-tools/) for users to 
-easily install your project onto their device.
+Veel plezier met deze tool.<br>
+Eventuele toevoegingen / verbeteringen <br> mogen via <b>[Pull requests](https://github.com/huizebruin/s0tool/pulls)</b> aangevuld worden.<br> 
+Of via <b>[issues](https://github.com/huizebruin/s0tool/issues) </b> aangevraagd en of toegevoegd worden.
+<br><br><b>
+Wobbe van Huizebruin.nl</b>
+<br><br>
 
-## Instructions
+***
 
-1. Use this repo template to [generate](https://github.com/esphome/esphome-project-template/generate) your own repository.
-   - Make sure to check `Include all branches` so that GitHub Pages is automatically enabled.
-2. Clone your new repository.
-3. Add your project specific YAML configuration(s) along with the contents of the `project-template-....yaml` files, taking note of the comments in this template file and name accordingly.
-4. 
-    a. Update [.github/workflows/publish.yml](.github/workflows/publish.yml) to contain your own YAML config filename(s).
-    b. Update [.github/workflows/ci.yml](.github/workflows/ci.yml) to contain your own YAML config filename(s).
-5. Update [static/_config.yml](static/_config.yml) to change the title, description and basic theme of the generated website.
-6. Add more content to the [static/index.md](static/index.md) file to explain your project.
-    Make sure to leave the installation code tags in place so users get the install button.
-7. Push your changes to the repository and GitHub Actions will automatically build and deploy your project.
+## Meewerken.
+Dit is een actief open-sourceproject. <br>
+We staan ​​altijd open voor mensen die de code willen gebruiken of eraan willen bijdragen.
+
+Wie werken er nog meer aan dit project : <br>
+![GitHub contributors](https://img.shields.io/github/contributors/huizebruin/s0tool?style=plastic)<br>
+****
+
+## License
+
+MIT License
+
+Copyright (c) 2021 / 2022 Huizebruin
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+***
+
+<a href="https://tc.tradetracker.net/?c=27&amp;m=39668&amp;a=385034&amp;r=&amp;u=" target="_blank" rel="sponsored nofollow">Geld verdienen met je site. Start nu, meldt je hier aan.</a>
