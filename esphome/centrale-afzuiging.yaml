@@ -1,11 +1,10 @@
 # Delen en bewerken mag maar laat deze eerste regels staan.
 # Bron : https://www.huizebruin.nl
-# Bron File : https://github.com/huizebruin/s0tool/tree/main/esphome
+# Bron File : https://github.com/huizebruin/centrale-afzuiging/blob/d03b7bb7f0c6b0df14053e4e81e1c0fe5b9131fc/esphome/centrale-afzuiging.yaml
 # © Huizebruin.nl
 substitutions:
   vdate: "v22.06.1"
-  device_description: centrale-afzuiging-gemaakt door huizebruin.nl versie ${vdate} .
-  impulslengte: "50ms" #30ms of 50ms zie datasheet van het type meter
+  device_description: centrale afzuiging gemaakt door huizebruin.nl versie ${vdate} .
   name: variabele afzuiging
 
 esphome:
@@ -38,7 +37,7 @@ web_server:
 captive_portal:
 # ⬇ Enable logging ⬇ # 
 logger:
-  level: INFO
+  
   
 #  # ⬇ Enable Home Assistant API ⬇ # 
 api:
@@ -64,7 +63,7 @@ fan:
   output: pwm_output
   name: "Ventilation"
   speed_count:
-    8
+    5
 
 #------------------------#  sensoren #------------------------#
 sensor:
