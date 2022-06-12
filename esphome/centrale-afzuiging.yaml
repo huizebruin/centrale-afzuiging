@@ -43,7 +43,6 @@ logger:
 #  # ⬇ Enable Home Assistant API ⬇ # 
 api:
 
-
 ota:
   safe_mode: true
   reboot_timeout: 10min
@@ -53,7 +52,6 @@ ota:
 time:
   - platform: homeassistant
     id: time_homeassistant
-
 
 output:
   platform: esp8266_pwm
@@ -67,15 +65,11 @@ fan:
   name: "Ventilation"
   speed_count:
     8
-
-
-
-
-
 #------------------------#  sensoren #------------------------#
+sensor:
 # ⬇ versie verbinding informatie sensoren voor in ha ⬇ #
   - platform: wifi_signal
-    name: "${name} - WiFi Signal"
+    name: "${name}_WiFi_Signal"
     update_interval: 120s
     
 text_sensor:

@@ -12,5 +12,5 @@ jobs:
     name: "🛠️ ESPHome firmware"
     uses: esphome/workflows/.github/workflows/publish.yml@main
     with:
-      files: esphome/centrale-afzuiging-esp8266.yaml
+      files: esphome/centrale-afzuiging.yaml
       name: centrale-afzuiging
