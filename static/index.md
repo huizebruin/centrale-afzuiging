@@ -4,8 +4,7 @@
 |  [![License][license-shield]](LICENSE) [![Forks][forks-shield]][forks-url] [![Stargazers][stars-shield]][stars-url] [![Issues][issues-shield]][issues-url] | [![Contributors][contributors-shield]][contributors-url] [![GitHub release](https://img.shields.io/github/release/huizebruin/centrale-afzuiging.svg)](https://GitHub.com/huizebruin/centrale-afzuiging/releases/)| 
 # About
 
-Add some information about your project here.
-
+Variabele snelheid centrale afzuiging met behulp van ESPHome voor o.a Home Assistant.
 
 ## Installation
 
