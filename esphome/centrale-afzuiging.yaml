@@ -6,7 +6,7 @@ substitutions:
   vdate: "v22.06.1"
   device_description: centrale-afzuiging-gemaakt door huizebruin.nl versie ${vdate} .
   impulslengte: "50ms" #30ms of 50ms zie datasheet van het type meter
-  name: centrale-afzuiging
+  name: variabele afzuiging
 
 esphome:
   name: ${name}
@@ -65,7 +65,7 @@ fan:
   name: "Ventilation"
   speed_count:
     8
-    
+
 #------------------------#  sensoren #------------------------#
 sensor:
 # ⬇ versie verbinding informatie sensoren voor in ha ⬇ #
