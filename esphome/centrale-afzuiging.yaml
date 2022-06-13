@@ -1,6 +1,6 @@
 # Delen en bewerken mag maar laat deze eerste regels staan.
 # Bron : https://www.huizebruin.nl
-# Bron File : https://github.com/huizebruin/centrale-afzuiging/blob/d03b7bb7f0c6b0df14053e4e81e1c0fe5b9131fc/esphome/centrale-afzuiging.yaml
+# Bron File : https://github.com/huizebruin/centrale-afzuiging/
 # © Huizebruin.nl
 substitutions:
   vdate: "v22.06.1"
