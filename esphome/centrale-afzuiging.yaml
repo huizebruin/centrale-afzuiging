@@ -16,8 +16,8 @@ esphome:
     name: huizebruin.${name}
     version: "${vdate}"
   
-#dashboard_import:
-#  package_import_url: github://huizebruin/centrale-afzuiging/centrale-afzuiging-esp8266.yaml@main
+dashboard_import:
+  package_import_url: github://huizebruin/centrale-afzuiging/centrale-afzuiging-esp8266.yaml@main
 
 improv_serial:
   
