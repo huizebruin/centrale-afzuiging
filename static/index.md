@@ -15,7 +15,7 @@ You can use the button below to install the <b>S0tool</b> firmware directly to y
 
 ***
 
-Have fun with the <b>S0tool</b>.<br>
+Have fun with the <b>tool</b>.<br>
  <br> For problems or solutions <b>[Pull requests](https://github.com/huizebruin/centrale-afzuiging/pulls)</b>.<br> 
 For problems <b>[issues](https://github.com/huizebruin/centrale-afzuiging/issues) </b> .
 <br><br><b>
