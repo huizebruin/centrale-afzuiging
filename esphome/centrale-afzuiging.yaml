@@ -3,7 +3,7 @@
 # Bron File : https://github.com/huizebruin/centrale-afzuiging/
 # © Huizebruin.nl
 substitutions:
-  vdate: "v22.06.1"
+  vdate: "v22.06.2"
   device_description: centrale afzuiging gemaakt door huizebruin.nl versie ${vdate}.
   name: "centrale_afzuiging"
 
