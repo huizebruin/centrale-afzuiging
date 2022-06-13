@@ -5,7 +5,7 @@
 substitutions:
   vdate: "v22.06.1"
   device_description: centrale afzuiging gemaakt door huizebruin.nl versie ${vdate}.
-  name: centrale_afzuiging
+  name: "centrale_afzuiging"
 
 esphome:
   name: ${name}
