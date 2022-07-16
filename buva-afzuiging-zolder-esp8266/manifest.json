@@ -1,0 +1,9 @@
+{
+  "chipFamily": "ESP8266",
+  "parts": [
+    {
+      "path": "buva-afzuiging-zolder-esp8266/buva-afzuiging-zolder-esp8266.bin",
+      "offset": 0
+    }
+  ]
+}
