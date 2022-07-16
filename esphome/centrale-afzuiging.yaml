@@ -22,8 +22,8 @@ dashboard_import:
   package_import_url: github://huizebruin/centrale-afzuiging/esphome/centrale-afzuiging-esp8266.yaml
 
 wifi:
-  ssid: !secret ssid
-  password: !secret password
+#  ssid: !secret ssid
+#  password: !secret password
 
 
   # Enable fallback hotspot (captive portal) in case wifi connection fails
