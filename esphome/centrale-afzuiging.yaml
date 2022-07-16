@@ -3,54 +3,52 @@
 # Bron File : https://github.com/huizebruin/centrale-afzuiging/
 # © Huizebruin.nl
 substitutions:
-  vdate: "v22.06.2"
-  device_description: centrale afzuiging gemaakt door huizebruin.nl versie ${vdate}.
-  name: "centrale_afzuiging"
-
+  time_timezone: "Europe/Amsterdam"
+  vdate: "v22.07.8"
+  device_description: centrale afzuiging gemaakt door huizebruin.nl versie ${vdate} .
+  friendly_name: centrale_afzuiging
+  name: centrale_afzuiging
+  
 esphome:
-  name: ${name}
+  name: buva-afzuiging-zolder
   platform: ESP8266
   board: d1_mini
   comment: '${device_description}'
   project:
     name: huizebruin.${name}
     version: "${vdate}"
-  
+
 dashboard_import:
-  package_import_url: github://huizebruin/centrale-afzuiging/centrale-afzuiging-esp8266.yaml@main
+  package_import_url: github://huizebruin/centrale-afzuiging/centrale-afzuiging-esp8266.yaml
 
-improv_serial:
-  
 wifi:
-# secrets rechts boven binnen esphome (vanaf versie 2021.12.0 - 11th standaard in de secrets)
-   ssid: "wifi_ssid"
-   password: "wifi_password"
-#------------------------##------------------------##------------------------##------------------------#
-# ⬇ Hieronder niets veranderen tenzij je het overal goed aanpast ⬇ #
-# ⬇ Schakel fallback-hotspot (captive portal) in voor het geval de wifi-verbinding mislukt ⬇ #
-  ap:
-    ssid: "${name}"
+  ssid: !secret ssid
+  password: !secret password
 
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "${name}-Fallback"
+    
 web_server:
   port: 80
   
 captive_portal:
-# ⬇ Enable logging ⬇ # 
+
+# Enable logging
 logger:
-  
-  
-#  # ⬇ Enable Home Assistant API ⬇ # 
+
+# Enable Home Assistant API
 api:
 
 ota:
-  safe_mode: true
-  reboot_timeout: 10min
-  num_attempts: 5
 
 #  ⬇ Enable time component voor reset elke nacht ⬇ #
 time:
   - platform: homeassistant
     id: time_homeassistant
+    on_time_sync:
+      - component.update: ${name}_uptime_timestamp
 
 output:
   platform: esp8266_pwm
@@ -64,12 +62,32 @@ fan:
   name: "Ventilation"
   speed_count:
     5
-
+    
+sensor:    
 #------------------------#  sensoren #------------------------#
-sensor:
+  - platform: uptime
+    id: ${name}_uptime
+
+  - platform: template
+    id: ${name}_uptime_timestamp
+    name: "${name} online sinds"
+    device_class: "timestamp"
+    accuracy_decimals: 0
+    update_interval: never
+    lambda: |-
+      static float timestamp = (
+        id(time_homeassistant).utcnow().timestamp - id(${name}_uptime).state
+      );
+      return timestamp;  
+      
+  # WiFi signal
+  - platform: wifi_signal
+    name: "${name} - WiFi Signal"
+    update_interval: 120s  
+        
 # ⬇ versie verbinding informatie sensoren voor in ha ⬇ #
   - platform: wifi_signal
-    name: "${name}_wiFi_Signal"
+    name: "${name} - WiFi Signal"
     update_interval: 120s
     
 text_sensor:
@@ -80,7 +98,6 @@ text_sensor:
     update_interval: 6h
     lambda: |-
       return {"${vdate}"};
-
   - platform: wifi_info
     ip_address:
       name: IP-adres
@@ -95,7 +112,7 @@ text_sensor:
       id: ${name}_mac_adres
       icon: mdi:folder-key-network-outline
 
-# ⬇ restart button voor de tool ⬇ #
+# ⬇ restart button voor de s0tool ⬇ #
 button:  
   - platform: restart
     name: "Restart device"
