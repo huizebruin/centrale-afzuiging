@@ -19,7 +19,7 @@ esphome:
     version: "${vdate}"
 
 dashboard_import:
-  package_import_url: github://huizebruin/centrale-afzuiging/esphome/centrale-afzuiging-esp8266.yaml
+  package_import_url: github://huizebruin/centrale-afzuiging/esphome/centrale-afzuiging.yaml
 
 wifi:
 #  ssid: !secret ssid
