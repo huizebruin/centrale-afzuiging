@@ -5,6 +5,8 @@
 # About
 
 Variabele snelheid centrale afzuiging met behulp van ESPHome voor o.a Home Assistant.
+Voor onder andere Buva .
+zolang de afzuiging geschakeld wordt met 0-10v is dit te gebruiken.
 
 ## Installation
 
